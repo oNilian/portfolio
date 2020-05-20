@@ -1,0 +1,19 @@
+@mixin hexagonBorder {
+    min-width: 315px;
+    min-height:370px;
+    clip-path: polygon(50% 0%,100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);
+    transform: rotate(90deg);
+}
+
+@mixin hexagon {
+    min-width: 300px;
+    min-height:350px;
+    clip-path: polygon(50% 0%,100% 28%, 100% 72%, 50% 100%, 0% 72%, 0% 28%);
+    transform: rotate(90deg);
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
