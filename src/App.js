@@ -6,8 +6,8 @@ import "./main.scss";
 function App() {
   return (
     <div className="App">
-      {/* <Intro /> */}
-      <Landingpage />
+      <Intro />
+      {/* <Landingpage /> */}
     </div>
   );
 }

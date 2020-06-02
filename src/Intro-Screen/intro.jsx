@@ -17,7 +17,7 @@ const Intro = () => {
     <div className="container-symbol-1">{present[0]}</div>
 
             <ul className="container-list">
-                <li className="list-item">Future Job</li>
+                <li className="list-item">Future job</li>
                 <li className="list-item">Co-Worker</li>
                 <li className="list-item">Friend</li>
                 <li className="list-item">User</li>

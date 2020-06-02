@@ -2,33 +2,33 @@
 
 
 
-body {
-    background: #34495e;
+.greeting-screen {
     margin: 0;
     padding: 0;
     color: lightgray;
 
     width: 100vw;
     height: 100vh;
-    @include center;
     font-family: 'Abel', sans-serif;
-}
 
-.greeting-screen {
     display: flex;
     flex-direction: row;
-    font-size: 30px;
-    line-height: 40px;
-    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 60px;
+    height: 100px;
     overflow:hidden;
 }
 
 .hello {
     margin: 0 1em 0 0;
-    color: #3feee6
+    color: #3feee6;
 }
 
 .container-list {
+    line-height: 100px;
+    // position: absolute;
     min-height: 200px;
     list-style: none;
     text-align: center;
@@ -38,6 +38,10 @@ body {
     animation-name: change;
     animation-duration: 10s;
     animation-iteration-count: infinite;
+
+    display:flex;
+    flex-direction: column;
+    align-self: flex-start;
 }
 
 .before-text, 
@@ -68,16 +72,45 @@ body {
     68%, 72% {transform:translate3d(0,-40%,0);}
     78%, 82% {transform:translate3d(0,-20%,0);}
     88%, 92% {transform:translate3d(0,0%,0);}
-  }
+}
 
-  /* @keyframes change {
-    0%, 12.66%, 100% {transform:translate3d(0,1%,0);}
-    16.66%, 29.32% {transform:translate3d(0,-19%,0);}
-    33.32%,45.98% {transform:translate3d(0,-39%,0);}
-    49.98%,62.64% {transform:translate3d(0,-59%,0);}
-    66.64%,79.3% {transform:translate3d(0,-79%,0);}
-    49.98%,62.64% {transform:translate3d(0,-59%,0);}
-    33.32%,45.98% {transform:translate3d(0,-39%,0);}
-    16.66%, 29.32% {transform:translate3d(0,-19%,0);}
-    0%, 12.66%, 100% {transform:translate3d(0,1%,0);}
-  } */
+@media (max-width: 800px) {
+    .greeting-screen {
+    
+        width: 100vw;
+        height: 100vh;
+        font-family: 'Abel', sans-serif;
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        font-size: 25px;
+        height: 100px;
+        overflow:hidden;
+    }
+    
+    .hello {
+        margin: 0 1em 0 0;
+        color: #3feee6;
+    }
+    
+    .container-list {
+        line-height: 100px;
+        // position: absolute;
+        min-height: 200px;
+        list-style: none;
+        text-align: center;
+        margin: 0 0.5em 0 0.5em;
+        padding: 0;
+    
+        animation-name: change;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+    
+        display:flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+}
